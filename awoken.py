@@ -101,6 +101,7 @@ class SnakeGame():
                 for kuyruk in self.kuyruklar:
                     kuyruk.goto(1000, 1000) # Kuyruklarımızı belirtilen kordinata gönderiyoruz.
                 self.puan = 0 # Skorumuzu sıfırladık.
+                self.sure = 0.15 # Yılanımızın hızını sıfırlayalım.
                 self.kuyruklar = [] # Yılan'ın kuyruklarını sıfırladık.
                 self.skor.clear() # Skor tablosunu sıfırladık.
                 self.skor.write("Skor: {}".format(self.puan), align="center", font=("Courier", 24, "normal")) # Skor'umuzu yazdırıyoruz. Ayrıca font ve yazı büyüklüğü ayarlarını yapıyoruz.
